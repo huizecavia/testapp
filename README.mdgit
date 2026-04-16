@@ -1,0 +1,19 @@
+# testapp
+initgit
+add
+README.mdgit
+commit
+-m
+first commit
+git
+branch
+-M
+developgit
+remote
+add
+origin
+https://github.com/huizecavia/testapp.gitgit
+push
+-u
+origin
+develop
