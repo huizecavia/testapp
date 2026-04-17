@@ -8,6 +8,9 @@ import { Durbuy } from './belgie/durbuy/durbuy';
 import { Irrland } from './duitsland/irrland/irrland';
 import { Winterberg } from './duitsland/winterberg/winterberg'; 
 
+import { Verhaallijn } from './verhaallijn/verhaallijn';
+import { Werkbelgie } from './verhaallijn/werkbelgie/werkbelgie';
+import { Werkduitsland } from './verhaallijn/werkduitsland/werkduitsland';
 
 export const routes: Routes = [
   {
@@ -29,5 +32,13 @@ export const routes: Routes = [
   {
     path: '',
     component: Home
+  },
+  {
+    path: 'verhaallijn',
+    component: Verhaallijn,
+     children: [
+      { path: 'duitsland', component: Werkduitsland },
+      { path: 'belgie', component: Werkbelgie },
+    ]   
   }
 ];
