@@ -1,0 +1,9 @@
+:host {
+  display: block;
+  background-color: #ADD8E6;
+  min-height: 100vh;
+}
+
+app-root {
+  color: #00008B;
+}
